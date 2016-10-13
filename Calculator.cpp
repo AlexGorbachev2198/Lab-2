@@ -37,8 +37,10 @@ long double Sqrt3(double x)
     return start;
 }
 int main() {
-    double a = 6.25;
-    unsigned int b = 4;
+    double a;
+    unsigned int b;
+    cin >> a;
+    cin >> b;
     cout << "Cумма " << Sum(a, b)<< endl;
     cout << "Частное " << Dev(a, b)<< endl;
     cout << "Умножение " << Mult(a, b)<< endl;
