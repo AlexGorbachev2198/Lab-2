@@ -25,7 +25,7 @@ long double Pow(double x,int y)
     else if(y ==1)return x;
     else return x*Pow(x,y-1);
 }
-long double Sqrt3(double x)
+long double Sqrt3(double x)//
 {
     double start = 1;
     int i =1;
