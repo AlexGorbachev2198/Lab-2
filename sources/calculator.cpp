@@ -15,7 +15,7 @@ long double Sub(double x,int y)
 {
     return x-y;
 }
-long double Pow(double x,int y)
+long double Pow1(double x,int y)
 {
     if(y<0) return 1/ Pow(x,-y);
     else if(y ==0) return 0;
