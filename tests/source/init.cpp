@@ -33,11 +33,11 @@ SCENARIO("calculator Sub", "[Sub]") {
     
 	REQUIRE( rv == 1);
 }
-SCENARIO("calculator Pow", "[Pow]") {
+SCENARIO("calculator Pow1", "[Pow1]") {
     double x = 3;
     int y = 2;
     
-    double rv = Pow( x, y );
+    double rv = Pow1( x, y );
     
 	REQUIRE( rv == 9 );
 }
