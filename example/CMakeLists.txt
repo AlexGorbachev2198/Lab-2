@@ -1,7 +1,6 @@
-cmake_minimum_required(VERSION 3.6)
-project(Lab2_Calculator_)
+cmake_minimum_required(VERSION 2.8)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-
-set(SOURCE_FILES Calculator.cpp)
-add_executable(Lab2_Calculator_ ${SOURCE_FILES})
+project (Lab-2_example)
+set(SOURCES main.cpp)
+add_executable (${PROJECT_NAME} ${SOURCES})
+target_link_libraries(${PROJECT_NAME} Lab-2)
