@@ -42,9 +42,9 @@ SCENARIO("calculator Pow1", "[Pow1]") {
 	REQUIRE( rv == 9 );
 }
 SCENARIO("calculator Sqrt3", "[Sqrt3]") {
-    double x = 4;
+    double x = 0.25;
     
     double rv = Sqrt3( x );
     
-	REQUIRE( rv == 2);
+	REQUIRE( rv == 0.5);
 }
