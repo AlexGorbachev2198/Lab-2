@@ -24,12 +24,15 @@ long double Pow1(double x,int y)
 }
 long double Sqrt3(double x)
 {
-    double start = 1;
-    int i =1;
-    for(i;i< x;i++)
-    {
-        if (Pow1(start,2) == x) break;
-        else start = 0.5*(start + x/start);
+    double pu =1; double y;
+    int i=0;
+    while(1) {
+        y=pu;
+        pu=0.5*(pu+x/pu);
+        if (pu>=y) {
+            i++; if (i>1);
+            break;
+        }
     }
-    return round(start*100)/100.;
+    return(pu);
 }
