@@ -5,7 +5,7 @@ SCENARIO("calculator Sum", "[Sum]") {
     double x = 3;
     int y = 4;
     
-    double rv = sum( x, y );
+    double rv = Sum( x, y );
     
 	REQUIRE( rv == 7);
 }
