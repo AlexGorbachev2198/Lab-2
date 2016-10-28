@@ -31,5 +31,5 @@ long double Sqrt3(double x)
         if (Pow1(start,2) == x) break;
         else start = 0.5*(start + x/start);
     }
-    return start;
+    return round(start*100)/100.;
 }
