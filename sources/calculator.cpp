@@ -2,10 +2,16 @@ long double Sum(double x,int y)
 {
     return x+y;
 }
-long double Dev(double x,int y)
+long double *Dev(double x,int y)
 {
-    if(y!= 0)return x/y;
-    else return 0;
+    if (y != 0){
+        long double buf = x/y;
+        long double *p = &buf;
+        return p;
+    }
+    else
+        return nullptr;
+    }
 }
 long double Mult(double x,int y)
 {
@@ -17,16 +23,13 @@ long double Sub(double x,int y)
 }
 long double Pow1(double x,int y)
 {
-     float buff;
-    bool abs = false;
-    if( y<0) abs = true;
+    float buff;
     int i;
     buff = 1;
     for (i = 1; i <= y; i++) {
         buff *= x;
     }
-    if(abs)return 1/buff;
-    else return buff;
+    return buff;
 }
 long double Sqrt3(double x)
 {
