@@ -17,10 +17,16 @@ long double Sub(double x,int y)
 }
 long double Pow1(double x,int y)
 {
-    if(y<0) return 1/ Pow1(x,-y);
-    else if(y ==0) return 0;
-    else if(y ==1)return x;
-    else return x*Pow1(x,y-1);
+     float buff;
+    bool abs = false;
+    if( y<0) abs = true;
+    int i;
+    buff = 1;
+    for (i = 1; i <= y; i++) {
+        buff *= x;
+    }
+    if(abs)return 1/buff;
+    else return buff;
 }
 long double Sqrt3(double x)
 {
