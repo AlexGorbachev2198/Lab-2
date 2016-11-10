@@ -41,7 +41,7 @@ SCENARIO("calculator Pow1", "[Pow1]") {
     
 	REQUIRE( rv == 9 );
 }
-SCENARIO("calculator Pow1", "[Pow1]") {
+SCENARIO("calculator Pow1.2", "[Pow1]") {
     double x = 2;
     int y = -2;
     
