@@ -13,7 +13,7 @@ SCENARIO("calculator Dev", "[Dev]") {
     double x = 8;
     int y = 4;
     
-    double rv = Dev( x, y );
+    double rv = *Dev( x, y );
     
 	REQUIRE( rv == 2);
 }
