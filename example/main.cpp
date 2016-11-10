@@ -9,7 +9,9 @@ int main() {
     cin >> a;
     cin >> b;
     cout << "Cумма " << Sum(a, b)<< endl;
-    cout << "Частное " << Dev(a, b)<< endl;
+    long double * buf = Dev(a,b);
+    if (buf) cout << "Частное: " << *res << endl;
+    else cout << "Ошибка. Ноль в знаменателе" << endl;
     cout << "Умножение " << Mult(a, b)<< endl;
     cout << "Разность " << Sub(a, b)<< endl;
     cout << "Степень " << Pow1(a, b)<< endl;
