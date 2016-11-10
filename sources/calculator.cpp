@@ -9,10 +9,8 @@ long double *Dev(double x,int y)
         long double *p = &buf;
         return p;
     }
-    else
-        return nullptr;
-    }
-}
+    else return nullptr;
+ }
 long double Mult(double x,int y)
 {
     return x*y;
