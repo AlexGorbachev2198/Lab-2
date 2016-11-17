@@ -4,12 +4,12 @@ long double Sum(double x,int y)
 }
 long double *Dev(double x,int y)
 {
-    if (y != 0){
-        long double buf = x/y;
-        long double *p = &buf;
-        return p;
-    }
-    else return nullptr;
+    if (y != 0) {
+		long double *buf = new long double;
+		*buf = x / y;
+		return buf;
+	}
+	else return nullptr;
  }
 long double Mult(double x,int y)
 {
@@ -21,7 +21,7 @@ long double Sub(double x,int y)
 }
 long double Pow1(double x,int y)
 {
-    float buff;
+    double buff;
     int i;
     buff = 1;
     for (i = 1; i <= y; i++) {
