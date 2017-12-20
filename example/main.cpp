@@ -8,7 +8,8 @@ int main() {
     unsigned int b;
     cin >> a;
     cin >> b;
-    if(cin){
+//Может быть ошибка ввода    
+if(cin){
     cout << "CСѓРјРјР° " << Sum(a, b)<< endl;
     long double *buf = Dev(a,b);
     if (buf) cout << "Р§Р°СЃС‚РЅРѕРµ: " << *buf << endl;
